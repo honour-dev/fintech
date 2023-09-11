@@ -27,6 +27,19 @@ active.forEach(aktive =>{
 })
 
 
+// navbar hover
+const navLink = document.querySelectorAll('.nav-link');
+
+const onNavLinkClick = (elem) => {
+   navlinks.forEach((link) => link.classList.remove('active'));
+   elem.classList.add('active');
+};
+
+navlinks.forEach((navLink) =>
+   navLink.addEventListener('click', onNavLinkclick)
+);
+
+
 
 // faqs toggle
 const faq = document.querySelectorAll('.faq');
@@ -46,7 +59,4 @@ faq.forEach( faqs => {
 
 
 // date
-const date = (document.getElementById('date').innerHTML = new Date().getFullYear());
-
-
-
+const date = document.getElementById('date').innerHTML = new Date().getFullYear();

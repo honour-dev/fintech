@@ -465,21 +465,20 @@ header .lead p{
    flex-wrap: wrap;
 }
 .profile-avi{
-   height: 100%;
-   width: 50%;
+   height: 56px;
+   width: 56px;
    padding-right: 0;
-   flex: 0 0 17%;
 }
 .profile-avi img{
-   height: 3.5rem;
-   width: 3.5rem;
+   height: 100%;
+   width: 100%;
    border-radius: 50%;
    object-fit: cover;
 }
 .profile-deet{
    text-transform: capitalize;
-   flex: 0 0 80%;
-   padding: .5rem;
+   /* flex: 0 0 80%;*/
+   padding: 8px;
    align-self: flex-start;
 }
 @media screen and (min-width: 662px){
@@ -490,7 +489,7 @@ header .lead p{
    }
    .testimonials{
       flex: 0 0 45%;
-      margin: .5rem;
+      margin: 8px;
    }
 }
 
