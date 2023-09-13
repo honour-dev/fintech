@@ -22,22 +22,11 @@ const active = document.querySelectorAll('.nav-link');
 
 active.forEach(aktive =>{
    aktive.addEventListener('click', function(){
-      aktive.classList.toggle('active')
+      document.querySelector('.active')?.classList.remove('active');
+
+      aktive.classList.add('active');
    })
 })
-
-
-// navbar hover
-const navLink = document.querySelectorAll('.nav-link');
-
-const onNavLinkClick = (elem) => {
-   navlinks.forEach((link) => link.classList.remove('active'));
-   elem.classList.add('active');
-};
-
-navlinks.forEach((navLink) =>
-   navLink.addEventListener('click', onNavLinkclick)
-);
 
 
 
@@ -59,4 +48,5 @@ faq.forEach( faqs => {
 
 
 // date
-const date = document.getElementById('date').innerHTML = new Date().getFullYear();
+const date = document.getElementById('date');
+date.innerHTML = new Date().getFullYear();
