@@ -1,0 +1,42 @@
+.contact {
+   padding-top: 80px;
+   padding-bottom: 80px;
+}
+.contact form{
+   display: flex;
+   flex-direction: column;
+   gap: 9px;
+}
+.contact input, .contact textarea{
+   padding: 23px;
+   background: var(--color-dark);
+   border: none;
+}
+.contact input::placeholder, .contact textarea::placeholder{
+   color: var(--color-black);
+}
+.contact input:focus, .contact textarea:focus{
+   background: var(--color-sec);
+   color: var(--color-white);
+}
+.contact textarea{
+   height: 160px;
+}
+.contact-btn{
+   color: var(--color-white);
+   border: none;
+   padding: 20px;
+   background: var(--color-sec);
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   width: 100px;
+   margin-top: 10px;
+   transition: var(--transition);
+   cursor: pointer;
+}
+.contact-btn:hover{
+   color: var(--color-sec);
+   background: var(--color-white);
+   border: 1px solid var(--color-sec);
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>honour exchange</title>
+   
+   <!-- iconscout cdn -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+   <!-- google fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+   
+
+   <!-- stylesheet -->
+   <link rel="stylesheet" href="./style.css">
+   <link rel="stylesheet" href="./contact.css">
+</head>
+<body>
+   <!----------------- navbar --------------->
+   <nav class="navbar">
+      <div class="section-center">
+         <h2>
+            <a href="index.html">noirPay</a>
+         </h2>
+
+         <span class="icon">
+            <i class="uil uil-bars" id="bars"></i>
+         </span>
+         <span class="icon">
+            <i class="uil uil-times" id="close-bars"></i>
+         </span>
+
+         <ul class="nav-items" id="navbar">
+            <li><a href="index.html" class="nav-link">home</a></li>
+            <li><a href="index.html#about" class="nav-link">about</a></li>
+            <li><a href="index.html#testimonials" class="nav-link">testimonials</a></li>
+            <li><a href="index.html#faqs" class="nav-link">FAQs</a></li>
+            <li><a href="contact.html" class="nav-link">contact us</a></li>
+         </ul>
+      </div>
+   </nav>
+
+
+   
+   
+   
+   <!----------------- contact --------------->
+   <section class="section section-center">
+
+      <article class="contact">
+         <form action="https://formspree.io/f/xeqbzgwj" method="POST">
+            <input type="name" id="name" name="name" placeholder="Your name" required>
+            <input type="gmail" id="gmail" name="gmail" placeholder="example@gmail.com" required>
+            <textarea name="message" id="message" placeholder="message" required></textarea>
+
+            <button type="submit" class="contact-btn">submit</button>
+         </form>
+      </article>
+   </section>
+
+
+
+
+
+   <!----------------- footer --------------->
+   <footer class="footer">
+      <article class="footer-section section-center">
+         <div class="footer-head">
+            <h3>noirPay</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam rem neque nobis odio fuga praesentium?</p>
+         </div>
+
+         <div class="footer-link">
+            <h3>permalinks</h3>
+            <ul class="footer-items">
+               <li><a href="#home">home</a></li>
+               <li><a href="#about">about</a></li>
+               <li><a href="#testimonial">testimonial</a></li>
+               <li><a href="#faqs">faqs</a></li>
+               <li><a href="#contact">contact</a></li>
+            </ul>
+         </div>
+
+         <div class="footer-link">
+            <h3>privacy</h3>
+            <ul class="footer-items">
+               <li><a href="#">privacy policy</a></li>
+               <li><a href="#">terms and condition</a></li>
+               <li><a href="#">refund policy</a></li>
+            </ul>
+         </div>
+
+         <div class="footer-contact">
+            <h3>contact us</h3>
+            <ul class="footer-items">
+               <li><a href="https://wa.me/qr/RM5B3HY4CO7XG1">whatsapp</a></li>
+               <li><a href="mailto:honouroke@gmail.com">click to send an email</a></li>
+            </ul>
+            <div class="footer-socials">
+               <a href="https://www.facebook.com" target="_blank"><i class="uil uil-facebook-f"></i></a>
+               <a href="https://www.instagram.com" target="_blank"><i class="uil uil-instagram"></i></a>
+               <a href="https://www.twitter.com" target="_blank"><i class="uil uil-twitter-alt"></i></a>
+               <a href="https://www.linkedin.com" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+            </div>
+         </div>
+      </article>
+      <hr class="footer-line">
+      <div class="copyright">
+         <p>copyright &copy; noirPay, honour-dev <span id="date"></span>. All right reserved.</p>
+      </div>
+   </footer>
+
+   <script src="./app.js"></script>
+</body>
+</html>
